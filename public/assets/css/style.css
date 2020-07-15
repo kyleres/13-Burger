@@ -1,0 +1,13 @@
+.image {
+  max-width: 250px;
+}
+
+body {
+  background-color: goldenrod;
+  color: brown;
+}
+
+.list-group-item {
+  background-color: green;
+  color: lightsalmon;
+}

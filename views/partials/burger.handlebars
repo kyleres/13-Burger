@@ -1,0 +1,9 @@
+<li class="list-group-item input-group">
+  {{#if devoured}}
+    <span class="burger">{{burger_name}}</span>
+    <button class="btn btn-warning float-left mr-2 eat" data-id="{{id}}" type="button" disabled>Devoured</button>
+  {{else}}
+    <span class="burger">{{burger_name}}</span>
+    <button class="btn btn-warning float-left mr-2 eat" data-id="{{id}}" type="button">Eat</button>
+  {{/if}}
+</li>
