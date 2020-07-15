@@ -1,5 +1,4 @@
 const mysql = require("mysql");
-const util = require("util");
 let connection;
 
 if (process.env.JAWSDB_URL) {
@@ -8,7 +7,7 @@ if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(
         {
             host: "localhost",
-            port: 3306,
+            port: 3000,
             user: "root",
             password: "MySQL@8400",
             database: "burgers_db"
@@ -17,6 +16,5 @@ if (process.env.JAWSDB_URL) {
 };
 
 connection.connect();
-connection.query = util.promisify(connection.query);
 
 module.exports = connection;
